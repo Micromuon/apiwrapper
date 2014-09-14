@@ -1,0 +1,19 @@
+{
+    "name": "wrapperapi",
+    "description": "Allows discovery of services",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node wrapperapi",
+        "test": "./node_modules/mocha/bin/mocha -R xunit | grep \"<\" > test-reports.xml"
+    },
+    "dependencies": {
+        "node-redis-pubsub-fork": "*",
+        "superagent": "*",
+        "restify": "*",
+        "timers": "*"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    }
+}
